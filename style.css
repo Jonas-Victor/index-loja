@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS',  helvetica, sans-serif;
+    background: #fcfcfc;
+
+}
+
+/*Layout da pag*/
+#cabeçalho
+{
+    background:#05B3F2 ;
+    text-align: center;
+    padding: 15px;
+}
+#logo
+{
+  padding: 11px;
+}
+
+#menu
+{ 
+    padding: 8px 12px;
+}
+
+/* fim do Layout da pag*/
+
+
+
+
+/*Formataçoes do menu*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{ /*links nao visitados e links visitados*/
+    color: white;
+    padding: 10px;
+}
+a:hover{/* links  houver que e quando vc passa o cursor em cima do link*/
+    color: #05B3F2;
+    background-color: white;
+    text-decoration: none;
+}
+ 
+ 
+
+/* Fim da formataçoes do menu*/
+
+
+/*Configuraçoes gerais*/
+
+.branco{
+    color: white;
+}
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+.clear{
+    clear: both;
+}
+
+/*Fim das Configuraçoes gerais*/
+
+/*SLIDE SHOW*/
+#container{
+    margin: 0;
+    padding: 0px 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
+}
+.content{
+    height: 540px;
+    width: 95%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-53%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #FFF;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background: #FFF;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1 :checked ~.s1 {
+    margin-left: 0px;
+}
+#slide2 :checked ~.s1 {
+    margin-left: -10%;
+}
+#slide3:checked ~.s1 {
+    margin-left: -20%;
+}
+#slide4:checked ~.s1 {
+    margin-left: -40%;
+}
+#slide5:checked ~.s1 {
+    margin-left: -60%;
+}
+/*Produtosssss*/
+
+section{
+    overflow-x: hidden;
+}
+
+
+.promotion{
+    margin-top: 580px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    padding-top: 30px;
+}
+
+.promotion span{
+   font-weight: 700;
+   color: #4e4e4e;
+
+}
+
+
+
+
+main{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 5%;
+}
+.colum{
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.produtos img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.produtos span{
+    font-weight: 700;
+}
+.price{
+    color: #4e4e4e;
+}
